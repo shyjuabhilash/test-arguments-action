@@ -24957,9 +24957,9 @@ const core = __importStar(__nccwpck_require__(2186));
  */
 async function run() {
     try {
-        const stepContext = core.getInput('stepContext');
+        const stepsContext = core.getInput('stepsContext');
         // Debug logs are only output if the `ACTIONS_STEP_DEBUG` secret is true
-        core.info(`stepContext:${stepContext}`);
+        core.info(`stepContext:${stepsContext}`);
     }
     catch (error) {
         // Fail the workflow run if an error occurs
