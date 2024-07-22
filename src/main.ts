@@ -10,7 +10,7 @@ export async function run(): Promise<void> {
     const stepsContext: string = core.getInput('stepsContext')
 
     // Debug logs are only output if the `ACTIONS_STEP_DEBUG` secret is true
-    core.info(`stepContext:${stepsContext}`)
+    core.info('stepContext:${stepsContext}')
   } catch (error) {
     // Fail the workflow run if an error occurs
     if (error instanceof Error) core.setFailed(error.message)
