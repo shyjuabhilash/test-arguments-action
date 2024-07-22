@@ -8,7 +8,7 @@ import { wait } from './wait'
 export async function run(): Promise<void> {
   try {
     const stepsContext: string = core.getInput('stepsContext')
-    console.log('steps context = $stepsContext');
+    console.log('steps context '+JSON.stringify(stepsContext));
     // Debug logs are only output if the `ACTIONS_STEP_DEBUG` secret is true
     core.info(`stepContext: ${stepsContext}`)
   } catch (error) {

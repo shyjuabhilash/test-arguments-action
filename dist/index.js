@@ -24958,7 +24958,7 @@ const core = __importStar(__nccwpck_require__(2186));
 async function run() {
     try {
         const stepsContext = core.getInput('stepsContext');
-        console.log('steps context = $stepsContext');
+        console.log('steps context ' + JSON.stringify(stepsContext));
         // Debug logs are only output if the `ACTIONS_STEP_DEBUG` secret is true
         core.info(`stepContext: ${stepsContext}`);
     }
